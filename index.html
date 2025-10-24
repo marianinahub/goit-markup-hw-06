@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Homework5</title>
+    <title>Homework 6</title>
     <link rel='preconnect' href='https://fonts.googleapis.com' />
     <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
     <link rel="stylesheet"
@@ -93,12 +93,12 @@
                 </ul>
             </div>
         </section>
-        <section id="contacts" class="section three">
+        <section id="contacts" class="section section-three">
             <div class="container">
                 <h2 class="section-title">Our Team</h2>
                 <ul class="team list">
                     <li class="item">
-                        <img src="./images/img1.jpg" alt="Photo of Mark Guerrero" width="264" height="260">
+                        <img src="./images/img1.jpg" srcset=" ./images/img1.jpg 1x, ./images/img1@2x.img 2x " alt="Photo of Mark Guerrero" width="264" height="260">
                         <div class="tim">
                             <h3 class="header-text team">Mark Guerrero</h3>
                             <p class="text team">Product Designer</p>
@@ -123,7 +123,7 @@
                         </div>
                     </li>
                     <li class="item">
-                        <img src="./images/img2.jpg" alt="Photo of Tom Ford" width="264" height="260">
+                        <img src="./images/img2.jpg" srcset=" ./images/img2.jpg 1x, ./images/img2@2x.img 2x " alt="Photo of Tom Ford" width="264" height="260">
                         <div class="tim">
                             <h3 class="header-text team">Tom Ford</h3>
                             <p class="text team">Frontend Developer</p>
@@ -148,7 +148,7 @@
                         </div>
                     </li>
                     <li class="item">
-                        <img src="./images/img3.jpg" alt="Photo of Camila Garcia" width="264" height="260">
+                        <img src="./images/img3.jpg" srcset=" ./images/img3.jpg 1x, ./images/img3@2x.img 2x "alt="Photo of Camila Garcia" width="264" height="260">
                         <div class="tim">
                             <h3 class="header-text team">Camila Garcia</h3>
                             <p class="text team">Marketing</p>
@@ -173,7 +173,7 @@
                         </div>
                     </li>
                     <li class="item">
-                        <img src="./images/img4.jpg" alt="Photo of Daniel Wilson" width="264" height="260">
+                        <img src="./images/img4.jpg" srcset=" ./images/img4.jpg 1x, ./images/img4@2x.img 2x " alt="Photo of Daniel Wilson" width="264" height="260">
                         <div class="tim">
                             <h3 class="header-text team">Daniel Wilson</h3>
                             <p class="text team">UI Designer</p>
@@ -200,13 +200,13 @@
                 </ul>
             </div>
         </section>
-        <section id="portfolio" class="section four">
+        <section id="portfolio" class="section section-four">
             <div class="container">
                 <h2 class="section-title portfolio">Our Portfolio</h2>
                 <ul class="portfolio list">
                     <li class="portfolio-item">
                         <div class="container-app">
-                            <img src="./images/img5.jpg" alt="BankApp mobile application interface" width="360"
+                            <img src="./images/img5.jpg"  alt="BankApp mobile application interface" width="360"
                                 height="300">
                             <p class="paragraph-app">14 Stylish and User-Friendly App Design Concepts · Task Manager App
                                 · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
@@ -218,7 +218,7 @@
                     </li>
                     <li class="portfolio-item">
                         <div class="container-app">
-                            <img src="./images/img6.jpg" alt="smartphone scans QR code next to reading device"
+                            <img src="./images/img6.jpg"  alt="smartphone scans QR code next to reading device"
                                 width="360" height="300">
                             <p class="paragraph-app">14 Stylish and User-Friendly App Design Concepts · Task Manager App
                                 · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
@@ -230,7 +230,7 @@
                     </li>
                     <li class="portfolio-item">
                         <div class="container-app">
-                            <img src="./images/img7.jpg"
+                            <img src="./images/img7.jpg" 
                                 alt="Laptop and smartphone on dark background with colored screens and text" width="360"
                                 height="300">
                             <p class="paragraph-app">14 Stylish and User-Friendly App Design Concepts · Task Manager App
@@ -243,7 +243,7 @@
                     </li>
                     <li class="portfolio-item">
                         <div class="container-app">
-                            <img src="./images/img8.jpg"
+                            <img src="./images/img8.jpg" 
                                 alt="Driver is driving in a car using a navigation system on his phone" width="360"
                                 height="300">
                             <p class="paragraph-app">14 Stylish and User-Friendly App Design Concepts · Task Manager App
@@ -256,7 +256,7 @@
                     </li>
                     <li class="portfolio-item">
                         <div class="container-app">
-                            <img src="./images/img9.jpg"
+                            <img src="./images/img9.jpg" 
                                 alt="Smartphone wallpaper with a large moon above the mountains in blue and purple tones."
                                 width="360" height="300">
                             <p class="paragraph-app">14 Stylish and User-Friendly App Design Concepts · Task Manager App
@@ -269,7 +269,7 @@
                     </li>
                     <li class="portfolio-item">
                         <div class="container-app">
-                            <img src="./images/img10.jpg"
+                            <img src="./images/img10.jpg" 
                                 alt="A girl in a sweater and hat is listening to music on her smartphone, smiling."
                                 width="360" height="300">
                             <p class="paragraph-app">14 Stylish and User-Friendly App Design Concepts · Task Manager App
@@ -414,6 +414,42 @@
             </div>
     </div>
 </div>
+<picture>
+    <source media="(min-width: 320px)" srcset="./images/img5_mob.jpg 1x, ./images/img5_mob@2x.jpg 2x" />
+    <source media="(min-width: 768px)" srcset="./images/img5tab.jpg 1x, ./images/img5tab@2x.jpg 2x" />
+    <source media="(min-width: 1440px)" srcset="./images/img5.jpg 1x, ./images/img5@2x.jpg 2x" />
+     <img src="./images/img5_mob.jpg" alt="" />
+</picture>
+<picture>
+    <source media="(min-width: 320px)" srcset="./images/img6_mob.jpg 1x, ./images/img6_mob@2x.jpg 2x" />
+    <source media="(min-width: 768px)" srcset="./images/img6tab.jpg 1x, ./images/img6tab@2x.jpg 2x" />
+    <source media="(min-width: 1440px)" srcset="./images/img6.jpg 1x, ./images/img6@2x.jpg 2x" />
+    <img src="./images/img6_mob.jpg" alt="" />
+</picture>
+<picture>
+    <source media="(min-width: 320px)" srcset="./images/img7_mob.jpg 1x, ./images/img7_mob@2x.jpg 2x" />
+    <source media="(min-width: 768px)" srcset="./images/img7tab.jpg 1x, ./images/img7tab@2x.jpg 2x" />
+    <source media="(min-width: 1440px)" srcset="./images/img7.jpg 1x, ./images/img7@2x.jpg 2x" />
+    <img src="./images/img7_mob.jpg" alt="" />
+</picture>
+<picture>
+    <source media="(min-width: 320px)" srcset="./images/img8_mob.jpg 1x, ./images/img8_mob@2x.jpg 2x" />
+    <source media="(min-width: 768px)" srcset="./images/img8tab.jpg 1x, ./images/img8tab@2x.jpg 2x" />
+    <source media="(min-width: 1440px)" srcset="./images/img8.jpg 1x, ./images/img8@2x.jpg 2x" />
+    <img src="./images/img8_mob.jpg" alt="" />
+</picture>
+<picture>
+    <source media="(min-width: 320px)" srcset="./images/img9_mob.jpg 1x, ./images/img9_mob@2x.jpg 2x" />
+    <source media="(min-width: 768px)" srcset="./images/img9tab.jpg 1x, ./images/img9tab@2x.jpg 2x" />
+    <source media="(min-width: 1440px)" srcset="./images/img9.jpg 1x, ./images/img9@2x.jpg 2x" />
+    <img src="./images/img9_mob.jpg" alt="" />
+</picture>
+<picture>
+    <source media="(min-width: 320px)" srcset="./images/img10_mob.jpg 1x, ./images/img10_mob@2x.jpg 2x" />
+    <source media="(min-width: 768px)" srcset="./images/img10tab.jpg 1x, ./images/img10tab@2x.jpg 2x" />
+    <source media="(min-width: 1440px)" srcset="./images/img10.jpg 1x, ./images/img10@2x.jpg 2x" />
+    <img src="./images/img10_mob.jpg" alt="" />
+</picture>
 </body>
 
 </html>
