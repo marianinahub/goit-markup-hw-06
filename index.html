@@ -19,11 +19,11 @@
         <div class="header-container container">
             <nav class="page-nav">
                 <a class="link logo-header" href="./index.html">Web<span class="logo-dark">Studio</span></a>
-                 <button class="mobile-menu-btn" type="button" aria-label="Open menu">
-                    <svg class="mobile-menu-btn-icon" width="24" height="24">
-                       <use href="./images/icons.svg#icon-menu"></use>
-                    </svg>
-                 </button>
+                            <button class="mobile-menu-btn" type="button" aria-label="Open menu">
+                                <svg class="mobile-menu-btn-icon" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-menu"></use>
+                                </svg>
+                                </button>
                 <ul class="header-nav-list">
                     <li class="nav-item strip"><a class="link link-strip" href="./index.html">Studio</a></li>
                     <li class="nav-item"><a class="link" href="">Portfolio</a></li>
@@ -56,8 +56,8 @@
                                 <use href=./images/icons.svg#icon-group></use>
                             </svg>
                         </div>
-                        <h3 class="header-text">Strategy</h3>
-                        <p class="text">Our goal is to identify the business problem to walk away with the perfect and
+                        <h3 class="header-text two">Strategy</h3>
+                        <p class="text two">Our goal is to identify the business problem to walk away with the perfect and
                             creative solution.</p>
                     </li>
                     <li class="strategy-item">
@@ -66,8 +66,8 @@
                                 <use href=./images/icons.svg#icon-clock></use>
                             </svg>
                         </div>
-                        <h3 class="header-text">Punctuality</h3>
-                        <p class="text">Bring the key message to the brand's audience for the best price within the
+                        <h3 class="header-text two">Punctuality</h3>
+                        <p class="text two">Bring the key message to the brand's audience for the best price within the
                             shortest possible time.</p>
                     </li>
                     <li class="strategy-item">
@@ -76,8 +76,8 @@
                                 <use href=./images/icons.svg#icon-diagram></use>
                             </svg>
                         </div>
-                        <h3 class="header-text">Diligence</h3>
-                        <p class="text">Research and confirm brands with the strongest digital growth opportunities and
+                        <h3 class="header-text two">Diligence</h3>
+                        <p class="text two">Research and confirm brands with the strongest digital growth opportunities and
                             minimize risk.</p>
                     </li>
                     <li class="strategy-item">
@@ -86,8 +86,8 @@
                                 <use href=./images/icons.svg#icon-astronaut></use>
                             </svg>
                         </div>
-                        <h3 class="header-text">Technologies</h3>
-                        <p class="text">Design practice focused on digital experiences. We bring forth a deep passion
+                        <h3 class="header-text two">Technologies</h3>
+                        <p class="text two">Design practice focused on digital experiences. We bring forth a deep passion
                             for problem-solving.</p>
                     </li>
                 </ul>
@@ -98,7 +98,7 @@
                 <h2 class="section-title">Our Team</h2>
                 <ul class="team list">
                     <li class="item">
-                        <img src="./images/img1.jpg" srcset=" ./images/img1.jpg 1x, ./images/img1@2x.img 2x " alt="Photo of Mark Guerrero" width="264" height="260">
+                        <img src="./images/img1.jpg" srcset="./images/img1.jpg 1x, ./images/img1@2x.jpg 2x" alt="Photo of Mark Guerrero" width="264" height="260">
                         <div class="tim">
                             <h3 class="header-text team">Mark Guerrero</h3>
                             <p class="text team">Product Designer</p>
@@ -123,7 +123,7 @@
                         </div>
                     </li>
                     <li class="item">
-                        <img src="./images/img2.jpg" srcset=" ./images/img2.jpg 1x, ./images/img2@2x.img 2x " alt="Photo of Tom Ford" width="264" height="260">
+                        <img src="./images/img2.jpg" srcset="./images/img2.jpg 1x, ./images/img2@2x.jpg 2x" alt="Photo of Tom Ford" width="264" height="260">
                         <div class="tim">
                             <h3 class="header-text team">Tom Ford</h3>
                             <p class="text team">Frontend Developer</p>
@@ -148,7 +148,7 @@
                         </div>
                     </li>
                     <li class="item">
-                        <img src="./images/img3.jpg" srcset=" ./images/img3.jpg 1x, ./images/img3@2x.img 2x "alt="Photo of Camila Garcia" width="264" height="260">
+                        <img src="./images/img3.jpg" srcset="./images/img3.jpg 1x, ./images/img3@2x.jpg 2x" alt="Photo of Camila Garcia" width="264" height="260">
                         <div class="tim">
                             <h3 class="header-text team">Camila Garcia</h3>
                             <p class="text team">Marketing</p>
@@ -173,7 +173,7 @@
                         </div>
                     </li>
                     <li class="item">
-                        <img src="./images/img4.jpg" srcset=" ./images/img4.jpg 1x, ./images/img4@2x.img 2x " alt="Photo of Daniel Wilson" width="264" height="260">
+                        <img src="./images/img4.jpg" srcset="./images/img4.jpg 1x, ./images/img4@2x.jpg 2x" alt="Photo of Daniel Wilson" width="264" height="260">
                         <div class="tim">
                             <h3 class="header-text team">Daniel Wilson</h3>
                             <p class="text team">UI Designer</p>
@@ -206,72 +206,98 @@
                 <ul class="portfolio list">
                     <li class="portfolio-item">
                         <div class="container-app">
-                            <img src="./images/img5.jpg"  alt="BankApp mobile application interface" width="360"
-                                height="300">
+                            <picture>
+                                <source media="(min-width: 1158px)" srcset="./images/img5.jpg 1x, ./images/img5@2x.jpg 2x" />
+                                <source media="(min-width: 768px)" srcset="./images/img5tab.jpg 1x, ./images/img5tab@2x.jpg 2x" />
+                                <source media="(max-width: 767px)" srcset="./images/img5_mob.jpg 1x, ./images/img5_mob@2x.jpg 2x" />
+                                <img src="./images/img5_mob.jpg" alt="BankApp mobile application interface" width="360"
+                                height="300" />
+                            </picture>
                             <p class="paragraph-app">14 Stylish and User-Friendly App Design Concepts · Task Manager App
                                 · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                         </div>
                         <div class="app">
                             <h3 class="header-text apps">Banking App</h3>
-                            <p class="text">App</p>
+                            <p class="text appe">App</p>
                         </div>
                     </li>
                     <li class="portfolio-item">
                         <div class="container-app">
-                            <img src="./images/img6.jpg"  alt="smartphone scans QR code next to reading device"
-                                width="360" height="300">
+                            <picture>
+                                <source media="(min-width: 1158px)" srcset="./images/img6.jpg 1x, ./images/img6@2x.jpg 2x" />
+                                <source media="(min-width: 768px)" srcset="./images/img6tab.jpg 1x, ./images/img6tab@2x.jpg 2x" />
+                                <source media="(max-width: 767px)" srcset="./images/img6_mob.jpg 1x, ./images/img6_mob@2x.jpg 2x" />
+                                <img src="./images/img6_mob.jpg" alt="smartphone scans QR code next to reading device"
+                                width="360" height="300" />
+                            </picture>
                             <p class="paragraph-app">14 Stylish and User-Friendly App Design Concepts · Task Manager App
                                 · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                         </div>
                         <div class="app">
                             <h3 class="header-text apps">Cashless Payment</h3>
-                            <p class="text">Marketing</p>
+                            <p class="text appe">Marketing</p>
                         </div>
                     </li>
                     <li class="portfolio-item">
                         <div class="container-app">
-                            <img src="./images/img7.jpg" 
-                                alt="Laptop and smartphone on dark background with colored screens and text" width="360"
-                                height="300">
+                            <picture>
+                                <source media="(min-width: 1158px)" srcset="./images/img7.jpg 1x, ./images/img7@2x.jpg 2x" />
+                                <source media="(min-width: 768px)" srcset="./images/img7tab.jpg 1x, ./images/img7tab@2x.jpg 2x" />
+                                <source media="(max-width: 767px)" srcset="./images/img7_mob.jpg 1x, ./images/img7_mob@2x.jpg 2x" />
+                                <img src="./images/img7_mob.jpg" alt="Laptop and smartphone on dark background with colored screens and text" width="360"
+                                height="300" />
+                            </picture>
                             <p class="paragraph-app">14 Stylish and User-Friendly App Design Concepts · Task Manager App
                                 · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                         </div>
                         <div class="app">
                             <h3 class="header-text apps">Meditation App</h3>
-                            <p class="text">App</p>
+                            <p class="text appe">App</p>
                         </div>
                     </li>
                     <li class="portfolio-item">
                         <div class="container-app">
-                            <img src="./images/img8.jpg" 
-                                alt="Driver is driving in a car using a navigation system on his phone" width="360"
-                                height="300">
+                            <picture>
+                                <source media="(min-width: 1158px)" srcset="./images/img8.jpg 1x, ./images/img8@2x.jpg 2x" />
+                                <source media="(min-width: 768px)" srcset="./images/img8tab.jpg 1x, ./images/img8tab@2x.jpg 2x" />
+                                <source media="(max-width: 767px)" srcset="./images/img8_mob.jpg 1x, ./images/img8_mob@2x.jpg 2x" />
+                                <img src="./images/img8_mob.jpg" alt="Driver is driving in a car using a navigation system on his phone" width="360"
+                                height="300" />
+                            </picture>
                             <p class="paragraph-app">14 Stylish and User-Friendly App Design Concepts · Task Manager App
                                 · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                         </div>
                         <div class="app">
                             <h3 class="header-text apps">Taxi Service</h3>
-                            <p class="text">Marketing</p>
+                            <p class="text appe">Marketing</p>
                         </div>
                     </li>
                     <li class="portfolio-item">
                         <div class="container-app">
-                            <img src="./images/img9.jpg" 
-                                alt="Smartphone wallpaper with a large moon above the mountains in blue and purple tones."
-                                width="360" height="300">
+                            <picture>
+                                <source media="(min-width: 1158px)" srcset="./images/img9.jpg 1x, ./images/img9@2x.jpg 2x" />
+                                <source media="(min-width: 768px)" srcset="./images/img9tab.jpg 1x, ./images/img9tab@2x.jpg 2x" />
+                                <source media="(max-width: 767px)" srcset="./images/img9_mob.jpg 1x, ./images/img9_mob@2x.jpg 2x" />
+                                <img src="./images/img9_mob.jpg" alt="Smartphone wallpaper with a large moon above the mountains in blue and purple tones."
+                                width="360" height="300" />
+                            </picture>
                             <p class="paragraph-app">14 Stylish and User-Friendly App Design Concepts · Task Manager App
                                 · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                         </div>
                         <div class="app">
                             <h3 class="header-text apps">Screen Illustrations</h3>
-                            <p class="text">Design</p>
+                            <p class="text appe">Design</p>
                         </div>
                     </li>
                     <li class="portfolio-item">
                         <div class="container-app">
-                            <img src="./images/img10.jpg" 
-                                alt="A girl in a sweater and hat is listening to music on her smartphone, smiling."
-                                width="360" height="300">
+                            <picture>
+                                <source media="(min-width: 1158px)" srcset="./images/img10.jpg 1x, ./images/img10@2x.jpg 2x" />
+                                <source media="(min-width: 768px)" srcset="./images/img10tab.jpg 1x, ./images/img10tab@2x.jpg 2x" />
+                                <source media="(max-width: 767px)" srcset="./images/img10_mob.jpg 1x, ./images/img10_mob@2x.jpg 2x" />
+                                <img src="./images/img10_mob.jpg" alt="A girl in a sweater and hat is listening to music on her smartphone, smiling."
+                                width="360" height="300" />
+                            </picture>
                             <p class="paragraph-app">14 Stylish and User-Friendly App Design Concepts · Task Manager App
                                 · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                         </div>
@@ -384,18 +410,18 @@
     <div class="mobile-menu">
     <div class="mobile-menu-container container">
             <button class="mobile-menu-btn" type="button" aria-label="Open menu">
-                <svg class="mobile-menu-btn-icon" width="24" height="24">
+                <svg class="mobile-menu-btn-icon" width="12" height="12">
                     <use href="./images/icons.svg#icon-close"></use>
                 </svg>
             </button>
             <ul class="mobile-menu-nav">
-                <li class="mobile-menu-item"><a class="mobile-menu-link" href="./index.html">Studio</a></li>
+                <li class="mobile-menu-item"><a class="mobile-menu-link color" href="./index.html">Studio</a></li>
                 <li class="mobile-menu-item"><a class="mobile-menu-link" href="">Portfolio</a></li>
                 <li class="mobile-menu-item"><a class="mobile-menu-link" href="">Contacts</a></li>
             </ul>
             <ul class="mobile-menu-contacts">
+                <li class="mobile-menu-item"><a class="mobile-menu-link color" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
                 <li class="mobile-menu-item"><a class="mobile-menu-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li class="mobile-menu-item"><a class="mobile-menu-link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
             </ul>
                 <ul class="mobile-menu-social-list list">
                     <li class="social-item"><a class="link-social" href=""><svg width="24" height="24" class="icon-class fill-icon">
@@ -414,42 +440,6 @@
             </div>
     </div>
 </div>
-<picture>
-    <source media="(min-width: 320px)" srcset="./images/img5_mob.jpg 1x, ./images/img5_mob@2x.jpg 2x" />
-    <source media="(min-width: 768px)" srcset="./images/img5tab.jpg 1x, ./images/img5tab@2x.jpg 2x" />
-    <source media="(min-width: 1440px)" srcset="./images/img5.jpg 1x, ./images/img5@2x.jpg 2x" />
-     <img src="./images/img5_mob.jpg" alt="" />
-</picture>
-<picture>
-    <source media="(min-width: 320px)" srcset="./images/img6_mob.jpg 1x, ./images/img6_mob@2x.jpg 2x" />
-    <source media="(min-width: 768px)" srcset="./images/img6tab.jpg 1x, ./images/img6tab@2x.jpg 2x" />
-    <source media="(min-width: 1440px)" srcset="./images/img6.jpg 1x, ./images/img6@2x.jpg 2x" />
-    <img src="./images/img6_mob.jpg" alt="" />
-</picture>
-<picture>
-    <source media="(min-width: 320px)" srcset="./images/img7_mob.jpg 1x, ./images/img7_mob@2x.jpg 2x" />
-    <source media="(min-width: 768px)" srcset="./images/img7tab.jpg 1x, ./images/img7tab@2x.jpg 2x" />
-    <source media="(min-width: 1440px)" srcset="./images/img7.jpg 1x, ./images/img7@2x.jpg 2x" />
-    <img src="./images/img7_mob.jpg" alt="" />
-</picture>
-<picture>
-    <source media="(min-width: 320px)" srcset="./images/img8_mob.jpg 1x, ./images/img8_mob@2x.jpg 2x" />
-    <source media="(min-width: 768px)" srcset="./images/img8tab.jpg 1x, ./images/img8tab@2x.jpg 2x" />
-    <source media="(min-width: 1440px)" srcset="./images/img8.jpg 1x, ./images/img8@2x.jpg 2x" />
-    <img src="./images/img8_mob.jpg" alt="" />
-</picture>
-<picture>
-    <source media="(min-width: 320px)" srcset="./images/img9_mob.jpg 1x, ./images/img9_mob@2x.jpg 2x" />
-    <source media="(min-width: 768px)" srcset="./images/img9tab.jpg 1x, ./images/img9tab@2x.jpg 2x" />
-    <source media="(min-width: 1440px)" srcset="./images/img9.jpg 1x, ./images/img9@2x.jpg 2x" />
-    <img src="./images/img9_mob.jpg" alt="" />
-</picture>
-<picture>
-    <source media="(min-width: 320px)" srcset="./images/img10_mob.jpg 1x, ./images/img10_mob@2x.jpg 2x" />
-    <source media="(min-width: 768px)" srcset="./images/img10tab.jpg 1x, ./images/img10tab@2x.jpg 2x" />
-    <source media="(min-width: 1440px)" srcset="./images/img10.jpg 1x, ./images/img10@2x.jpg 2x" />
-    <img src="./images/img10_mob.jpg" alt="" />
-</picture>
 </body>
 
 </html>
