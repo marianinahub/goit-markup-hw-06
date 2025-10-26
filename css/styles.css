@@ -78,9 +78,7 @@ img {
     }
 
         .container.header-container {
-            padding: 0;
             margin: 0;
-            gap: 0;
         }
 }
 .page-nav {
@@ -111,7 +109,7 @@ img {
             font-weight: 700;
             font-size: 18px;
             text-transform: uppercase;
-            margin-right: 144px;
+            margin-right: 153px;
 
 }
 
@@ -847,6 +845,11 @@ font-weight: 500;
         }
     }
 
+        @media screen and (min-width: 768px) {
+            .container-socia {
+                margin: 0 0 16px;
+            }
+        }
 
 .social-paragraph {
     font-weight: 500;
