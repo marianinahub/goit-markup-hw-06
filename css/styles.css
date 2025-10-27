@@ -218,22 +218,20 @@ img {
 
 @media screen and (min-width: 768px) {
     .header-list-contacts {
-        display: block;
+        display: flex;
+        flex-direction: column;
     }
 
-        .header-list-contacts .link-contacts:first-child {
-            margin-bottom: 12px;
+        .header-list-contacts {
+            gap: 12px;
         }
-}
+    }
 
 @media screen and (min-width: 1158px) {
     .header-list-contacts {
         display: flex;
             gap: 40px;
     }
-          .header-list-contacts .link-contacts:first-child {
-              margin-bottom: 0;
-          }
 }
 .link-contacts {
     display: flex;
