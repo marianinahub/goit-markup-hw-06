@@ -220,16 +220,15 @@ img {
     .header-list-contacts {
         display: flex;
         flex-direction: column;
+        gap: 12px;
     }
 
-        .header-list-contacts {
-            gap: 12px;
-        }
     }
 
 @media screen and (min-width: 1158px) {
     .header-list-contacts {
         display: flex;
+        flex-direction: row;
             gap: 40px;
     }
 }
